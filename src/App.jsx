@@ -1,35 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import star from '../public/star.jpg'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App(){
+  return(
+    <div id='post'>
+    <div id='quadrado'>
+      <img src={star} alt="" id='post'/>
+      <h1>Pôster: Start Wars (1997)</h1>
+      <p>Um pôster decorativo épico do filme Star Wars, com moldura de MDF e
+       tamanho A3. Uma  ótima recordação de um dos mais icônicos filmes de
+       todos os tempos. Este clássico pôster trará aventura, nostalgia e a magia
+       de Star Wars para qualquer lugar que você decidir pendurar. Não perca
+        a chance de adicionar essa linda memória ao seu acervo! </p>
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <button>Comprar agora</button>
+    </div>
+    </div>
+
   )
 }
-
-export default App
